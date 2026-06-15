@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.TestCalcu" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/btn_operator</item>
+        <item name="colorSurface">@color/bg_dark</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+    </style>
+
+    <style name="CalcBtn" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">48dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="rippleColor">@android:color/white</item>
+    </style>
+
+    <style name="CalcBtn.Number" parent="CalcBtn">
+        <item name="backgroundTint">@color/btn_number</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="CalcBtn.Function" parent="CalcBtn">
+        <item name="backgroundTint">@color/btn_function</item>
+        <item name="android:textColor">@color/text_function</item>
+    </style>
+
+    <style name="CalcBtn.Operator" parent="CalcBtn">
+        <item name="backgroundTint">@color/btn_operator</item>
+        <item name="android:textColor">@color/text_operator</item>
+    </style>
+
+    <style name="CalcBtn.Equals" parent="CalcBtn">
+        <item name="backgroundTint">@color/btn_equals</item>
+        <item name="android:textColor">@color/text_operator</item>
+    </style>
+
+</resources>
